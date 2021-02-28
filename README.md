@@ -16,7 +16,7 @@ Additionally, you need to download and install the "Waymo Open Dataset Files" an
 
 Moreover, download the precomputed results for `darknet` and `fpn_resnet` in this link <https://drive.google.com/drive/folders/1-s46dKSrtx8rrNwnObGbly2nO3i4D7r7?usp=sharing>. And then unzip them into the folder `/results`.
 
-Once you completed the first steps to install this project, it is time to download the following files and to copy them in the following directories:
+Once you completed the first steps to install this project, it is time to download the following files in this github repository and to copy them in the following directories:
 
 | FILES TO COPY | DIRECTORIES |
 | ------------- | -------------|
