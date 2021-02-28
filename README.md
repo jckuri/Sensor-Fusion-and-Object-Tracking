@@ -23,7 +23,7 @@ https://youtu.be/DfNAdwFrbcE<br/>
 <img src='images/step4p-video.png'/>
 
 **RMSE through time (Step 4 with ground-truth labels)**<br/>
-<img src='images/RMSE4.png'/>
+<img src='images/RMSE4P.png'/>
 
 **[SDCE ND] Sensor Fusion and Object Tracking (Step 4)**<br/>
 https://youtu.be/ZWA0pGVKmP8<br/>
