@@ -113,7 +113,7 @@ Such big RMSE at the end is caused by the fact I keep tracks without measurement
 **RMSE through time (Step 3)**<br/>
 <img src='images/RMSE3.png'/>
 
-Step 3 is the same experiment in Step 4. So, I won't uploaded a video of Step 3. And I will explain the RMSEs of Step 3 in Step 4.
+Step 3 is the same experiment in Step 4. So, I didn't upload a video of Step 3. And I will explain the RMSEs of Step 3 in Step 4.
 
 **[SDCE ND] Sensor Fusion and Object Tracking (Step 4)**<br/>
 https://youtu.be/ZWA0pGVKmP8<br/>
