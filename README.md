@@ -26,6 +26,7 @@ Once you completed the first steps to install this project, it is time to downlo
 | `/student/measurements.py` | `/student/` |
 | `/student/objdet_detect.py` | `/student/` |
 | `/student/trackmanagement.py` | `/student/` |
+| `/student/params.py` | `/misc/` |
 
 Note: The directory `/` is relative to this project's directory.
 
