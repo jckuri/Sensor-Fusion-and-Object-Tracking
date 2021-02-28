@@ -48,6 +48,10 @@ Now that you have successfully installed this project, you can run it by using t
 For me, the most difficult part of the project was to fully understand the overall structure of the project. In addition to completing all the TODOs, I also needed to read the source code of all the Python files in the whole project. Because the TODOs asked me to do many things that were confusing and ambiguous. I didn't know how to complete many TODOs. The devil is in the details. And by reading and understanding all the source files, I finally completed the project. The real problem is this project has many mutually-interacting synergistic parts. And if you program one part in a wrong way, the whole project fails. So, it's very demotivating to see that nothing in this project works well. But I knew that it was my fault. I knew that I programmed many parts in a wrong way. So, I printed and printed all the intermediate results, validating that everything is well programmed as intended. In this way, I got everything correct and now the project finally works.
     
 ### Do you see any benefits in camera-lidar fusion compared to lidar-only tracking (in theory and in your concrete results)?
+
+In theory, cameras have more resolution and more frames per second than lidar. Hence, cameras are better at detecting objects in the environment, resolving ambiguities.
+
+In my concrete results, I experienced a significant improvement in the accuracy when I finished implementing the Step 4, which fuses lidar measurements with camera measurements. Resolving the ambiguities of the video in Step 4 would be very difficult without camera measurements.
     
 ### Which challenges will a sensor fusion system face in real-life scenarios? Did you see any of these challenges in the project?
 
