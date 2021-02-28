@@ -27,6 +27,10 @@ Once you completed the first steps to install this project, it is time to downlo
 | `/student/objdet_detect.py` | `/student/` |
 | `/student/trackmanagement.py` | `/student/` |
 
+Note: The directory `/` is relative to this project's directory.
+
+Now that you have successfully installed this project, you can run it by using this command `python loop_over_dataset_f4.py`.
+
 ## Questions to Answer
 
 ### Write a short recap of the four tracking steps and what you implemented there (EKF, track management, data association, camera-lidar sensor fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
