@@ -88,7 +88,7 @@ And the mean RMSE is 0.31, below 0.35 as the rubric requested.
 https://youtu.be/yj8v9OILTUo<br/>
 <img src='images/step2-video.png'/>
 
-EKF follows this fast car without problems. However, at the end, EKF is still predicting the car position, beyond the field-of-view. Why? I implemented this behavior in order to keep tracking the difficult examples of Step 4, in which 1 car in some parts of the video don't have measurements for a long time. If I delete such tracks without measurements soon, EKF won't follow the 2 important cars from the beginning to the end, as the rubric requested. But it is very easy to delete old tracks. It is just about tuning the parameters in this code:
+EKF follows this fast car without problems. However, at the end, EKF is still predicting the car position, beyond the field-of-view. Why? I implemented this behavior in order to keep tracking the difficult examples of Step 4, in which 1 car in some parts of the video doesn't have measurements for a long time. If I delete such tracks without measurements soon, EKF won't follow the 2 important cars from the beginning to the end, as the rubric requested. But it is very easy to delete old tracks. It is just about tuning the parameters in this code:
 
 ```
         # delete old tracks   
