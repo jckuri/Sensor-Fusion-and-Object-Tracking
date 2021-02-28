@@ -77,15 +77,38 @@ Moreover, I should try the "Stand Out Suggestions":
 https://youtu.be/slhJJ3BBzGA<br/>
 <img src='images/step1-video.png'/>
 
+The tracker follows the car smoothly.
+
 **RMSE through time (Step 1)**<br/>
 <img src='images/RMSE1.png'/>
+
+And the mean RMSE is 0.31, bellow 0.35 as the rubric requested.
 
 **[SDCE ND] Sensor Fusion and Object Tracking (Step 2)**<br/>
 https://youtu.be/yj8v9OILTUo<br/>
 <img src='images/step2-video.png'/>
 
+The tracker follows this fast car without problems. However, at the end, the tracker is still predicting the car position, beyond the field-of-view. Why? I implemented this behavior in order to keep tracking the difficult examples of Step 4, in which car in some parts of the video don't have measurements for a long time. If I delete such tracks without measurements soon, the tracker won't follow the 2 important cars from the beginning to the end, as the rubric requested. But it is very easy to delete old tracks. It is just about tuning the parameters in this code:
+
+```
+        # delete old tracks   
+        to_be_deleted = []
+        for i in range(len(self.track_list)):
+            track = self.track_list[i]
+            P = track.P
+            if (track.state == 'initialized' and track.score <= 0.01 and len(track.assignments) >= 4) or \
+            (track.state == 'tentative' and track.score <= 0.2) or \
+            (track.state == 'confirmed' and track.score <= 0.2) or \
+            (P[0,0] > params.max_P or P[1,1] > params.max_P):
+                to_be_deleted.append(track)
+        for track in to_be_deleted:
+            self.delete_track(track)                
+```
+
 **RMSE through time (Step 2)**<br/>
 <img src='images/RMSE2.png'/>
+
+Such big RMSE at the end is caused by the fact I keep tracks without measurements for a long time. Because deleting old tracks too soon would make me fail the Step 4. Otherwise, RMSEs are below 0.2.
 
 **RMSE through time (Step 3)**<br/>
 <img src='images/RMSE3.png'/>
