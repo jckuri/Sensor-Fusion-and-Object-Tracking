@@ -138,3 +138,5 @@ When I use ground-truth labels, my tracker works perfectly and follows the 2 imp
 ## Note for the reviewer:
 
 I'm a reviewer candidate and my opportunity to obtain this certification expires in 1 day. I don't know if Christopher will extend my deadline. So, please be kind when grading this project. Notice that the precomputed detections given by Udacity have big gaps of false negatives. I did my best at tuning the parameters and algorithms of this project. However, the mean RMSE of Step 4 is slightly above of what the rubric asks. That's why I use ground-truth labels to fulfill the mean RMSE requested by the rubric. And I programmed on purpose the behavior of not deleting old tracks too soon. Otherwise, I wouldn't be able to track the 2 important cars from begining to end without losing their track.
+
+Here is the github repository of my solution: https://github.com/jckuri/Sensor-Fusion-and-Object-Tracking
