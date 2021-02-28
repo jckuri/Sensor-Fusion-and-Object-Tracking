@@ -18,7 +18,8 @@ Moreover, download the precomputed results for `darknet` and `fpn_resnet` in thi
 
 Once you completed the first steps to install this project, it is time to download the following files and to copy them in the following directories:
 
-|---FILES TO COPY---|---DIRECTORIES---|
+| FILES TO COPY | DIRECTORIES |
+| ------------- | -------------|
 | `loop_over_dataset_f4.py` | `/` |
 | `/student/association.py` | `/student/` |
 | `/student/filter.py` | `/student/` |
