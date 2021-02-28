@@ -57,7 +57,7 @@ In my concrete results, I experienced a significant improvement in the accuracy 
 
 Cameras are less accurate at night and at estimating distances. Hence, sensor fusion systems must deal with these inaccuracies. Fortunately, the EKF has the mathematical foundations to deal with noisy measurements properly.
 
-Yes, I saw in the project that camera measurements where less accurate than lidar measurements. Fortunately, theses cameras recorded videos in the day, not in the night, which would make this project harder.
+Yes, I saw in the project that camera measurements were less accurate than lidar measurements. Fortunately, theses cameras recorded videos in the day, not in the night, which would make this project harder.
 
 ### Can you think of ways to improve your tracking results in the future?
 
