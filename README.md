@@ -14,7 +14,17 @@ Basically, you need to install Python 3.7 and all the requirements in the file `
 
 Additionally, you need to download and install the "Waymo Open Dataset Files" and the Pre-Trained Models for `darknet` <https://drive.google.com/file/d/1Pqx7sShlqKSGmvshTYbNDcUEYyZwfn3A/view?usp=sharing> and `fpn_resnet` <https://drive.google.com/file/d/1RcEfUIF1pzDZco8PJkZ10OL-wLL2usEj/view?usp=sharing>. Once downloaded, please copy the model files into the paths `/tools/objdet_models/darknet/pretrained` and `/tools/objdet_models/fpn_resnet/pretrained respectively`.
 
-Moreover, 
+Moreover, download the precomputed results for `darknet` and `fpn_resnet` in this link <https://drive.google.com/drive/folders/1-s46dKSrtx8rrNwnObGbly2nO3i4D7r7?usp=sharing>. And then unzip them into the folder `/results`.
+
+Once you completed the first steps to install this project, it is time to download the following files and to copy them in the following directories:
+
+|---FILES TO COPY---|---DIRECTORIES---|
+| `loop_over_dataset_f4.py` | `/` |
+| `/student/association.py` | `/student/` |
+| `/student/filter.py` | `/student/` |
+| `/student/measurements.py` | `/student/` |
+| `/student/objdet_detect.py` | `/student/` |
+| `/student/trackmanagement.py` | `/student/` |
 
 ## Questions to Answer
 
