@@ -130,7 +130,7 @@ Track 0 (blue) and track 1 (orange) are the 2 important cars whose tracking was 
 https://youtu.be/DfNAdwFrbcE<br/>
 <img src='images/step4p-video.png'/>
 
-When I use ground-truth labels, my tracker works perfectly. It follows the 2 important cars from the begining to the end with mean RMSEs of 0.13 and 0.06, as the rubric requested. Moreover, more confirmed tracks appear as a result of perfectly detecting the cars parked in the right side at the end of the video.
+When I use ground-truth labels, my tracker works perfectly and follows the 2 important cars from the begining to the end with mean RMSEs of 0.13 and 0.06, as the rubric requested. Moreover, more confirmed tracks appear as a result of perfectly detecting the cars parked in the right side at the end of the video.
 
 **RMSE through time (Step 4 with ground-truth labels)**<br/>
 <img src='images/RMSE4P.png'/>
