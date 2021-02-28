@@ -55,7 +55,21 @@ In my concrete results, I experienced a significant improvement in the accuracy 
     
 ### Which challenges will a sensor fusion system face in real-life scenarios? Did you see any of these challenges in the project?
 
+Cameras are less accurate at night and at estimating distances. Hence, sensor fusion systems must deal with these inaccuracies. Fortunately, the EKF has the mathematical foundations to deal with noisy measurements properly.
+
+Yes, I saw in the project that camera measurements where less accurate than lidar measurements. Fortunately, theses cameras recorded videos in the day, not in the night, which would make this project harder.
+
 ### Can you think of ways to improve your tracking results in the future?
+
+I used precomputed detections in this project. And these precomputed detections provided by Udacity had lots of false negatives, lots of ground-truth labels without measurements. The gaps in the frames are big. I'm not exaggerating. Perhaps I should compute my own detections by using my own code. I hope to improve my results in this way.
+
+Moreover, I should try the "Stand Out Suggestions":
+
+- Fine-tune your parameterization and see how low an RMSE you can achieve! One idea would be to apply the standard deviation values for lidar that you found in the mid-term project. The parameters in `misc/params.py` should enable a first running tracking, but there is still a lot of room for improvement through parameter tuning!
+- Implement a more advanced data association, e.g. Global Nearest Neighbor (GNN) or Joint Probabilistic Data Association (JPDA).
+- Feed your camera detections from Project 1 to the tracking.
+- Adapt the Kalman filter to also estimate the object's width, length, and height, instead of simply using the unfiltered lidar detections as we did.
+- Use a non-linear motion model, e.g. a bicycle model, which is more appropriate for vehicle movement than our linear motion model, since a vehicle can only move forward or backward, not in any direction.
 
 ## Results
 
