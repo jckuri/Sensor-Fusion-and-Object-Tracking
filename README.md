@@ -142,5 +142,5 @@ I'm a reviewer candidate and my opportunity to obtain this certification expires
 
 Here is the github repository of my solution: https://github.com/jckuri/Sensor-Fusion-and-Object-Tracking
 
-I already fixed 2 errors of my first submission. So, I can pass without problems. Here is my new solution, which is not submitted yet.
+UPDATE: I already fixed 2 errors of my first submission. So, I can pass without problems. Here is my new solution, which is not submitted yet.<br/>
 https://github.com/jckuri/Sensor-Fusion-and-Object-Tracking-2
